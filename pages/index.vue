@@ -12,19 +12,20 @@
         <v-col xl="6" lg="6" md="12" sm="12" cols="12">
           <v-card class="pa-4" elevation="0">
             <v-card-title>
-              <h1 class="no-text-break display--large">
+              <h1 class="no-text-break display--medium font-weight-bold">
                 Асуултынхаа хариуг хялбараар шийд.
               </h1>
             </v-card-title>
             <v-card-subtitle class="mt-4 pb-3">
-              <p class="no-text-break body--medium">
-                Энэхүү чатбот нь шинээр элсэгчид,оюутан,багш ажилчидад тулгамдсан асуудлыг шийдэх 24 цагийн виртуал туслах.
-                Та энэхүү чатботоос МУИС-ийн мэдээлэлүүдийг хялбар аргаар авах боломжтой.
+              <p class="no-text-break body--large">
+                Энэхүү чатбот нь шинээр элсэгчид,оюутан,багш ажилчидад
+                тулгамдсан асуудлыг шийдэх 24 цагийн виртуал туслах. Та энэхүү
+                чатботоос МУИС-ийн мэдээлэлүүдийг хялбар аргаар авах боломжтой.
               </p>
             </v-card-subtitle>
             <v-card-actions>
               <v-btn depressed color="primary">
-                <p class="body--medium mb-0">Цааш унших</p>
+                <p class="body--medium mb-0">Сиси бот</p>
                 <v-icon>mdi-chevron-right</v-icon>
               </v-btn>
             </v-card-actions>
@@ -34,6 +35,7 @@
           <v-img
             :src="require('assets/gif/chat.gif')"
             :lazy-src="require('assets/gif/chat.gif')"
+            alt="sisi-bot"
           />
         </v-col>
       </v-row>
@@ -68,16 +70,11 @@
     <section class="mx-80 my-12">
       <h3 class="display--small text-center mb-4">Сиси бот нь</h3>
       <p class="mb-6 body-medium text-center mx-auto" style="max-width: 60%">
-        МУИС-ийн нээлттэй датан дээр тулгуурлаж сургагдсан тул та хүссэн мэдээлэлээ авах боломжтой.
+        МУИС-ийн нээлттэй датан дээр тулгуурлаж сургагдсан тул та хүссэн
+        мэдээлэлээ авах боломжтой.
       </p>
 
       <v-row>
-        <!-- <div class="road-container">
-          <v-img
-            :src="require('assets/images/road.png')"
-            :lazy-src="require('assets/images/road.png')"
-          />
-        </div> -->
         <v-col xl="4" lg="4" md="4" sm="12">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
@@ -101,7 +98,8 @@
 
             <v-card-text>
               <p class="body--medium text-center">
-                Та хөтөлбөр, хичээл сонголт, сургалтын төлөвлөгөө, судалгааны ажилын талаарх хүссэн асуултаа асуу. 
+                Та хөтөлбөр, хичээл сонголт, сургалтын төлөвлөгөө, судалгааны
+                ажилын талаарх хүссэн асуултаа асуу.
               </p>
             </v-card-text>
           </v-card>
@@ -122,9 +120,7 @@
               </div>
             </v-card-title>
             <v-card-subtitle>
-              <h4 class="title--medium black--text text-center">
-                Түр хүлээ
-              </h4>
+              <h4 class="title--medium black--text text-center">Түр хүлээ</h4>
             </v-card-subtitle>
 
             <v-card-text>
@@ -157,7 +153,8 @@
 
             <v-card-text>
               <p class="body--medium text-center">
-                Бид таны асуултанд тохирсон хамгийн шилдэг хариуг гаргаж өгөх болно.
+                Бид таны асуултанд тохирсон хамгийн шилдэг хариуг гаргаж өгөх
+                болно.
               </p>
             </v-card-text>
           </v-card>
@@ -165,7 +162,9 @@
       </v-row>
     </section>
 
-    <section class="models-container py-12 my-12">
+    <v-divider />
+
+    <section class="models-container py-12">
       <div class="mx-80 mx-auto">
         <h3 class="display--small text-center mb-4">Modeluud</h3>
         <p class="mb-6 body-medium text-center mx-auto" style="max-width: 60%">
@@ -289,6 +288,8 @@
         </v-row>
       </div>
     </section>
+
+    <v-divider />
 
     <section class="my-16 mx-80 mx-auto">
       <h3 class="display--small text-center mb-4">Services</h3>
@@ -510,7 +511,14 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
+        <v-col
+          v-if="!$vuetify.breakpoint.mdAndDown"
+          xl="2"
+          lg="2"
+          md="0"
+          sm="0"
+          cols="0"
+        ></v-col>
         <v-col xl="4" lg="4" md="6" sm="12" cols="12">
           <v-card elevation="1">
             <v-card-title class="justify-center mb-4">
@@ -651,8 +659,55 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
+        <v-col
+          xl="2"
+          lg="2"
+          md="0"
+          sm="0"
+          cols="0"
+          v-if="!$vuetify.breakpoint.mdAndDown"
+        ></v-col>
       </v-row>
+    </section>
+
+    <v-divider />
+
+    <section class="member-container my-12">
+      <div class="mx-80 mx-auto">
+        <h3 class="mb-4 display--small text-center">bagiin gishuud</h3>
+        <p class="mb-6 body-medium text-center mx-auto" style="max-width: 60%">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+          officia, voluptatem deserunt incidunt dolorum, voluptatibus, quae ut
+          dolorem enim blanditiis
+        </p>
+        <div class="d-flex flex-wrap" style="justify-content: space-evenly">
+          <div
+            v-for="(member, index) in members"
+            :key="index"
+            class="mx-6 my-4 d-flex justify-center align-center flex-column cursor-pointer member-image"
+          >
+            <v-img
+              :src="
+                require(`@/assets/images/team-members/${member.imageLink}.jpg`)
+              "
+              :lazy-src="
+                require(`@/assets/images/team-members/${member.imageLink}.jpg`)
+              "
+              :alt="member.imageLink"
+              width="240"
+              height="auto"
+              :aspect-ratio="2 / 3"
+              class="rounded-lg"
+            />
+            <div
+              class="py-6 mt-n10 rounded-lg d-flex flex-column justify-center align-center member-info"
+            >
+              <h4 class="title--medium text-center">{{ member.firstName }}</h4>
+              <p class="body--medium text-center mb-0">{{ member.position }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -677,7 +732,7 @@ export default {
   },
   data() {
     return {
-      animationDuration: 10,
+      animationDuration: 16,
       logos: [
         {
           src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nuxt_logo_%282021%29.svg/2560px-Nuxt_logo_%282021%29.svg.png",
@@ -716,6 +771,17 @@ export default {
           alt: "google_cloud_logo",
         },
       ],
+      members: [
+        { imageLink: "ireedui", firstName: "firstName", position: "SoftWare" },
+        { imageLink: "amaraa", firstName: "firstName", position: "SoftWare" },
+        { imageLink: "boloroo", firstName: "firstName", position: "SoftWare" },
+        {
+          imageLink: "taivanbat",
+          firstName: "firstName",
+          position: "SoftWare",
+        },
+        { imageLink: "anna", firstName: "firstName", position: "SoftWare" },
+      ],
     };
   },
 };
@@ -738,8 +804,8 @@ export default {
     align-items: center;
     overflow-x: auto;
     .carousel-item {
-      margin: 0 16px;
       animation: scrollAnimation 10s linear infinite;
+      margin: 0 16px;
     }
     &::-webkit-scrollbar-track {
       display: none;
@@ -758,7 +824,7 @@ export default {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-85%);
+    transform: translateX(-600%);
   }
   100% {
     transform: translateX(0%);
@@ -773,5 +839,25 @@ export default {
 
 .models-container {
   background-color: var(--background);
+}
+
+.member-info {
+  background-color: white;
+  width: 200px;
+  transition: 0.5s;
+  z-index: 3;
+  box-shadow: 0px 25px 25px -25px rgba(0, 0, 0, 0.2);
+}
+
+.member-image {
+  &:hover {
+    box-shadow: 0px 50px 50px -50px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    .member-info {
+      opacity: 1;
+      box-shadow: 0px 50px 50px -50px rgba(0, 0, 0, 0.4);
+    }
+  }
 }
 </style>

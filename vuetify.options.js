@@ -5,7 +5,7 @@ export default {
       dark: {
         primary: "#1e4688",
         secondary: "#00A9B4",
-        background: "0F172A",
+        background: "#d0d6f5",
         success: "#28a745",
         error: "#DF435E",
         warning: "#ffbc00",
@@ -14,7 +14,7 @@ export default {
       light: {
         primary: "#1e4688",
         secondary: "#00A9B4",
-        background: "0F172A",
+        background: "d0d6f5",
         textColor: "#302f5b",
         success: "#28a745",
         error: "#DF435E",

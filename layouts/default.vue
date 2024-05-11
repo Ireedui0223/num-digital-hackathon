@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="main-container">
     <Header class="header-container" v-if="!$vuetify.breakpoint.smAndDown" />
     <v-main app>
       <Nuxt />
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from "../components/Header/Header.vue";
+import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 
 export default {

@@ -20,6 +20,10 @@
     cursor: pointer;
 }
 
+.main-container {
+    background-color: #e0e2ed
+}
+
 .v-tab {
     text-transform: none !important;
 }
