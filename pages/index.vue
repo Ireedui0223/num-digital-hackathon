@@ -13,16 +13,13 @@
           <v-card class="pa-4" elevation="0">
             <v-card-title>
               <h1 class="no-text-break display--large">
-                Lorem ipsum dolor, sit amet consectetur
+                Асуултынхаа хариуг хялбараар шийд.
               </h1>
             </v-card-title>
             <v-card-subtitle class="mt-4 pb-3">
               <p class="no-text-break body--medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                voluptates, quod, quae, quibusdam doloremque quia quos
-                exercitationem voluptatum quas quidem. Quisquam, quae. Quisquam
-                voluptates, quod, quae, quibusdam doloremque quia quos
-                exercitationem voluptatum quas quidem. Quisquam, quae.
+                Энэхүү чатбот нь шинээр элсэгчид,оюутан,багш ажилчидад тулгамдсан асуудлыг шийдэх 24 цагийн виртуал туслах.
+                Та энэхүү чатботоос МУИС-ийн мэдээлэлүүдийг хялбар аргаар авах боломжтой.
               </p>
             </v-card-subtitle>
             <v-card-actions>
@@ -69,11 +66,9 @@
     </section>
 
     <section class="mx-80 my-12">
-      <h3 class="display--small text-center mb-4">Lorem ipsum dolor sit</h3>
+      <h3 class="display--small text-center mb-4">Сиси бот нь</h3>
       <p class="mb-6 body-medium text-center mx-auto" style="max-width: 60%">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officia,
-        voluptatem deserunt incidunt dolorum, voluptatibus, quae ut dolorem enim
-        blanditiis
+        МУИС-ийн нээлттэй датан дээр тулгуурлаж сургагдсан тул та хүссэн мэдээлэлээ авах боломжтой.
       </p>
 
       <v-row>
@@ -83,7 +78,7 @@
             :lazy-src="require('assets/images/road.png')"
           />
         </div> -->
-        <v-col xl="3" lg="3" md="3" sm="12">
+        <v-col xl="4" lg="4" md="4" sm="12">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
               <div
@@ -100,52 +95,18 @@
             </v-card-title>
             <v-card-subtitle>
               <h4 class="title--medium black--text text-center">
-                Lorem ipsum dolor sit
+                Асуултаа асуу
               </h4>
             </v-card-subtitle>
 
             <v-card-text>
               <p class="body--medium text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quae. Quisquam voluptates, quod, quae, quibusdam
-                doloremque quia quos exercitationem voluptatum quas quidem.
-                Quisquam, quae.
+                Та хөтөлбөр, хичээл сонголт, сургалтын төлөвлөгөө, судалгааны ажилын талаарх хүссэн асуултаа асуу. 
               </p>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="3" lg="3" md="3" sm="12" class="mt-8">
-          <v-card elevation="0">
-            <v-card-title class="justify-center mb-4">
-              <div
-                class="rounded-circle"
-                style="
-                  border: 1px solid var(--background);
-                  background-color: rgb(242, 244, 255);
-                "
-              >
-                <v-avatar height="100%" aspect size="auto">
-                  <PerceptionSvg />
-                </v-avatar>
-              </div>
-            </v-card-title>
-            <v-card-subtitle>
-              <h4 class="title--medium black--text text-center">
-                Lorem ipsum dolor sit
-              </h4>
-            </v-card-subtitle>
-
-            <v-card-text>
-              <p class="body--medium text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quae. Quisquam voluptates, quod, quae, quibusdam
-                doloremque quia quos exercitationem voluptatum quas quidem.
-                Quisquam, quae.
-              </p>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col xl="3" lg="3" md="3" sm="12">
+        <v-col xl="4" lg="4" md="4" sm="12">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
               <div
@@ -162,21 +123,18 @@
             </v-card-title>
             <v-card-subtitle>
               <h4 class="title--medium black--text text-center">
-                Lorem ipsum dolor sit
+                Түр хүлээ
               </h4>
             </v-card-subtitle>
 
             <v-card-text>
               <p class="body--medium text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quae. Quisquam voluptates, quod, quae, quibusdam
-                doloremque quia quos exercitationem voluptatum quas quidem.
-                Quisquam, quae.
+                Бидний чатбот түргэн шуурхай хариулна
               </p>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="3" lg="3" md="3" sm="12" class="mt-8">
+        <v-col xl="4" lg="4" md="4" sm="12">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
               <div
@@ -193,16 +151,13 @@
             </v-card-title>
             <v-card-subtitle>
               <h4 class="title--medium black--text text-center">
-                Lorem ipsum dolor sit
+                Хүссэн асуултынхаа хариуг ав
               </h4>
             </v-card-subtitle>
 
             <v-card-text>
               <p class="body--medium text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quae. Quisquam voluptates, quod, quae, quibusdam
-                doloremque quia quos exercitationem voluptatum quas quidem.
-                Quisquam, quae.
+                Бид таны асуултанд тохирсон хамгийн шилдэг хариуг гаргаж өгөх болно.
               </p>
             </v-card-text>
           </v-card>
