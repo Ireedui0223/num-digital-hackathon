@@ -1,8 +1,15 @@
 <template>
   <div>
-    <div class="mx-80 mx-auto">
-      <v-row no-gutters style="margin-top: 160px; margin-bottom: 72px">
-        <v-col cols="6">
+    <section class="mx-80 mx-auto">
+      <v-row
+        no-gutters
+        :style="
+          $vuetify.breakpoint.smAndDown
+            ? ''
+            : 'margin-top: 160px; margin-bottom: 72px'
+        "
+      >
+        <v-col xl="6" lg="6" md="12" sm="12" cols="12">
           <v-card class="pa-4" elevation="0">
             <v-card-title>
               <h1 class="no-text-break display--large">
@@ -26,40 +33,42 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="6">
+        <v-col xl="6" lg="6" md="12" sm="12" cols="12">
           <v-img
             :src="require('assets/gif/chat.gif')"
             :lazy-src="require('assets/gif/chat.gif')"
           />
         </v-col>
       </v-row>
-    </div>
+    </section>
 
-    <div class="tech-stack-container py-12">
-      <h3 class="mb-6 display--small text-center">
-        Бидний ашиглаж буй технологууд
-      </h3>
-      <div class="carousel-container mx-80 mx-auto">
-        <div
-          class="carousel-item pt-4"
-          :style="{ animationDuration: animationDuration + 's' }"
-          v-for="(logo, index) in logos"
-          :key="index"
-        >
-          <v-img
-            height="60"
-            width="180"
-            contain
-            :src="logo.src"
-            :lazy-src="logo.src"
-            :alt="logo.alt"
+    <section class="tech-stack-container py-12 my-12">
+      <div class="mx-80 mx-auto">
+        <h3 class="mb-6 display--small text-center">
+          Бидний ашиглаж буй технологууд
+        </h3>
+        <div class="carousel-container">
+          <div
+            class="carousel-item pt-4"
+            :style="{ animationDuration: animationDuration + 's' }"
+            v-for="(logo, index) in logos"
+            :key="index"
           >
-          </v-img>
+            <v-img
+              height="60"
+              width="180"
+              contain
+              :src="logo.src"
+              :lazy-src="logo.src"
+              :alt="logo.alt"
+            >
+            </v-img>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="mx-80 my-12">
+    <section class="mx-80 my-12">
       <h3 class="display--small text-center mb-4">Lorem ipsum dolor sit</h3>
       <p class="mb-6 body-medium text-center mx-auto" style="max-width: 60%">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officia,
@@ -68,6 +77,12 @@
       </p>
 
       <v-row>
+        <!-- <div class="road-container">
+          <v-img
+            :src="require('assets/images/road.png')"
+            :lazy-src="require('assets/images/road.png')"
+          />
+        </div> -->
         <v-col xl="3" lg="3" md="3" sm="12">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
@@ -99,7 +114,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="3" lg="3" md="3" sm="12">
+        <v-col xl="3" lg="3" md="3" sm="12" class="mt-8">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
               <div
@@ -161,7 +176,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="3" lg="3" md="3" sm="12">
+        <v-col xl="3" lg="3" md="3" sm="12" class="mt-8">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
               <div
@@ -193,7 +208,497 @@
           </v-card>
         </v-col>
       </v-row>
-    </div>
+    </section>
+
+    <section class="models-container py-12 my-12">
+      <div class="mx-80 mx-auto">
+        <h3 class="display--small text-center mb-4">Modeluud</h3>
+        <p class="mb-6 body-medium text-center mx-auto" style="max-width: 60%">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+          officia, voluptatem deserunt incidunt dolorum, voluptatibus, quae ut
+          dolorem enim blanditiis
+        </p>
+        <v-row>
+          <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+            <v-card class="d-flex flex-column justify-center align-center">
+              <v-avatar class="mt-8" height="64" width="64">
+                <v-img
+                  :src="require('@/assets/images/models/book.png')"
+                  :lazy-src="require('@/assets/images/models/book.png')"
+                  alt="book"
+                ></v-img>
+              </v-avatar>
+              <v-card-title class="title-small text-center">
+                Model name1
+              </v-card-title>
+              <v-card-subtitle>
+                <p class="body-medium text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
+                  doloribus maiores earum perspiciatis laborum sit quisquam
+                  fugit soluta, reprehenderit quas enim culpa quidem!
+                </p>
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+          <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+            <v-card class="d-flex flex-column justify-center align-center">
+              <v-avatar class="mt-8" height="64" width="64">
+                <v-img
+                  :src="require('@/assets/images/models/book.png')"
+                  :lazy-src="require('@/assets/images/models/book.png')"
+                  alt="book"
+                ></v-img>
+              </v-avatar>
+              <v-card-title class="title-small text-center">
+                Model name2
+              </v-card-title>
+              <v-card-subtitle>
+                <p class="body-medium text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
+                  doloribus maiores earum perspiciatis laborum sit quisquam
+                  fugit soluta, reprehenderit quas enim culpa quidem!
+                </p>
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+          <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+            <v-card class="d-flex flex-column justify-center align-center">
+              <v-avatar class="mt-8" height="64" width="64">
+                <v-img
+                  :src="require('@/assets/images/models/book.png')"
+                  :lazy-src="require('@/assets/images/models/book.png')"
+                  alt="book"
+                ></v-img>
+              </v-avatar>
+              <v-card-title class="title-small text-center">
+                Model name3
+              </v-card-title>
+              <v-card-subtitle>
+                <p class="body-medium text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
+                  doloribus maiores earum perspiciatis laborum sit quisquam
+                  fugit soluta, reprehenderit quas enim culpa quidem!
+                </p>
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+          <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
+          <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+            <v-card class="d-flex flex-column justify-center align-center">
+              <v-avatar class="mt-8" height="64" width="64">
+                <v-img
+                  :src="require('@/assets/images/models/book.png')"
+                  :lazy-src="require('@/assets/images/models/book.png')"
+                  alt="book"
+                ></v-img>
+              </v-avatar>
+              <v-card-title class="title-small text-center">
+                Model name4
+              </v-card-title>
+              <v-card-subtitle>
+                <p class="body-medium text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
+                  doloribus maiores earum perspiciatis laborum sit quisquam
+                  fugit soluta, reprehenderit quas enim culpa quidem!
+                </p>
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+          <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+            <v-card class="d-flex flex-column justify-center align-center">
+              <v-avatar class="mt-8" height="64" width="64">
+                <v-img
+                  :src="require('@/assets/images/models/book.png')"
+                  :lazy-src="require('@/assets/images/models/book.png')"
+                  alt="book"
+                ></v-img>
+              </v-avatar>
+              <v-card-title class="title-small text-center"
+                >Model name4
+              </v-card-title>
+              <v-card-subtitle>
+                <p class="body-medium text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
+                  doloribus maiores earum perspiciatis laborum sit quisquam
+                  fugit soluta, reprehenderit quas enim culpa quidem!
+                </p>
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+          <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
+        </v-row>
+      </div>
+    </section>
+
+    <section class="my-16 mx-80 mx-auto">
+      <h3 class="display--small text-center mb-4">Services</h3>
+
+      <p class="mb-10 body-medium text-center mx-auto" style="max-width: 60%">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officia,
+        voluptatem deserunt incidunt dolorum, voluptatibus, quae ut dolorem enim
+        blanditiis
+      </p>
+
+      <v-row>
+        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+          <v-card elevation="1">
+            <v-card-title class="justify-center mb-4">
+              <div
+                class="rounded-circle"
+                style="
+                  border: 1px solid var(--background);
+                  background-color: rgb(242, 244, 255);
+                "
+              >
+                <v-avatar height="100%" aspect size="auto">
+                  <RobotSvg />
+                </v-avatar>
+              </div>
+            </v-card-title>
+            <v-card-subtitle>
+              <h4 class="title--medium black--text text-center">
+                Бидний үйлчилгээ1
+              </h4>
+              <p class="mb-0 body-medium line-clamp-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat repellendus sed maxime voluptate, accusantium
+              </p>
+            </v-card-subtitle>
+
+            <v-card-text>
+              <v-list>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+          <v-card elevation="1">
+            <v-card-title class="justify-center mb-4">
+              <div
+                class="rounded-circle"
+                style="
+                  border: 1px solid var(--background);
+                  background-color: rgb(242, 244, 255);
+                "
+              >
+                <v-avatar height="100%" aspect size="auto">
+                  <RobotSvg />
+                </v-avatar>
+              </div>
+            </v-card-title>
+            <v-card-subtitle>
+              <h4 class="title--medium black--text text-center">
+                Бидний үйлчилгээ2
+              </h4>
+              <p class="mb-0 body-medium line-clamp-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat repellendus sed maxime voluptate, accusantium
+              </p>
+            </v-card-subtitle>
+
+            <v-card-text>
+              <v-list>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+          <v-card elevation="1">
+            <v-card-title class="justify-center mb-4">
+              <div
+                class="rounded-circle"
+                style="
+                  border: 1px solid var(--background);
+                  background-color: rgb(242, 244, 255);
+                "
+              >
+                <v-avatar height="100%" aspect size="auto">
+                  <RobotSvg />
+                </v-avatar>
+              </div>
+            </v-card-title>
+            <v-card-subtitle>
+              <h4 class="title--medium black--text text-center">
+                Бидний үйлчилгээ3
+              </h4>
+              <p class="mb-0 body-medium line-clamp-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat repellendus sed maxime voluptate, accusantium
+              </p>
+            </v-card-subtitle>
+
+            <v-card-text>
+              <v-list>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
+        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+          <v-card elevation="1">
+            <v-card-title class="justify-center mb-4">
+              <div
+                class="rounded-circle"
+                style="
+                  border: 1px solid var(--background);
+                  background-color: rgb(242, 244, 255);
+                "
+              >
+                <v-avatar height="100%" aspect size="auto">
+                  <RobotSvg />
+                </v-avatar>
+              </div>
+            </v-card-title>
+            <v-card-subtitle>
+              <h4 class="title--medium black--text text-center">
+                Бидний үйлчилгээ4
+              </h4>
+              <p class="mb-0 body-medium line-clamp-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat repellendus sed maxime voluptate, accusantium
+              </p>
+            </v-card-subtitle>
+
+            <v-card-text>
+              <v-list>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
+          <v-card elevation="1">
+            <v-card-title class="justify-center mb-4">
+              <div
+                class="rounded-circle"
+                style="
+                  border: 1px solid var(--background);
+                  background-color: rgb(242, 244, 255);
+                "
+              >
+                <v-avatar height="100%" aspect size="auto">
+                  <RobotSvg />
+                </v-avatar>
+              </div>
+            </v-card-title>
+            <v-card-subtitle>
+              <h4 class="title--medium black--text text-center">
+                Бидний үйлчилгээ5
+              </h4>
+              <p class="mb-0 body-medium line-clamp-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat repellendus sed maxime voluptate, accusantium
+              </p>
+            </v-card-subtitle>
+
+            <v-card-text>
+              <v-list>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas eveniet
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 
@@ -275,7 +780,6 @@ export default {
   overflow: hidden;
   .carousel-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     overflow-x: auto;
     .carousel-item {
@@ -299,10 +803,20 @@ export default {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-90%);
+    transform: translateX(-85%);
   }
   100% {
     transform: translateX(0%);
   }
+}
+
+.road-container {
+  position: absolute;
+  margin: -20px 0 0 -20px;
+  z-index: 2;
+}
+
+.models-container {
+  background-color: var(--background);
 }
 </style>

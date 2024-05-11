@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Header class="header-container" />
+    <Header class="header-container" v-if="!$vuetify.breakpoint.smAndDown" />
     <v-main app>
       <Nuxt />
     </v-main>
