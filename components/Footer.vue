@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <p class="text-right body-medium mb-0">Made with ❤️ by Ireedui</p>
+    <p class="text-right body-medium mb-0">Made with ❤️ by Ireedui and Taivn</p>
   </v-footer>
 </template>
 

@@ -166,12 +166,7 @@
 
     <section class="models-container py-12">
       <div class="mx-80 mx-auto">
-        <h3 class="display--small text-center mb-4">Modeluud</h3>
-        <p class="mb-6 body-medium text-center mx-auto" style="max-width: 60%">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-          officia, voluptatem deserunt incidunt dolorum, voluptatibus, quae ut
-          dolorem enim blanditiis
-        </p>
+        <h3 class="display--small text-center mb-4">МУИС-ийн нээлттэй өгөгдөлийн сангаас бидний сонгож авсан өгөгдөлүүд</h3>
         <v-row>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
@@ -185,14 +180,7 @@
               <v-card-title class="title-small text-center">
                 Model name1
               </v-card-title>
-              <v-card-subtitle>
-                <p class="body-medium text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
-                  doloribus maiores earum perspiciatis laborum sit quisquam
-                  fugit soluta, reprehenderit quas enim culpa quidem!
-                </p>
-              </v-card-subtitle>
+
             </v-card>
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
@@ -207,14 +195,7 @@
               <v-card-title class="title-small text-center">
                 Model name2
               </v-card-title>
-              <v-card-subtitle>
-                <p class="body-medium text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
-                  doloribus maiores earum perspiciatis laborum sit quisquam
-                  fugit soluta, reprehenderit quas enim culpa quidem!
-                </p>
-              </v-card-subtitle>
+
             </v-card>
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
@@ -229,14 +210,6 @@
               <v-card-title class="title-small text-center">
                 Model name3
               </v-card-title>
-              <v-card-subtitle>
-                <p class="body-medium text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
-                  doloribus maiores earum perspiciatis laborum sit quisquam
-                  fugit soluta, reprehenderit quas enim culpa quidem!
-                </p>
-              </v-card-subtitle>
             </v-card>
           </v-col>
           <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
@@ -252,14 +225,6 @@
               <v-card-title class="title-small text-center">
                 Model name4
               </v-card-title>
-              <v-card-subtitle>
-                <p class="body-medium text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
-                  doloribus maiores earum perspiciatis laborum sit quisquam
-                  fugit soluta, reprehenderit quas enim culpa quidem!
-                </p>
-              </v-card-subtitle>
             </v-card>
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
@@ -274,14 +239,7 @@
               <v-card-title class="title-small text-center"
                 >Model name4
               </v-card-title>
-              <v-card-subtitle>
-                <p class="body-medium text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eligendi iusto dicta excepturi maxime, libero corrupti officia
-                  doloribus maiores earum perspiciatis laborum sit quisquam
-                  fugit soluta, reprehenderit quas enim culpa quidem!
-                </p>
-              </v-card-subtitle>
+
             </v-card>
           </v-col>
           <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
@@ -292,14 +250,7 @@
     <v-divider />
 
     <section class="my-16 mx-80 mx-auto">
-      <h3 class="display--small text-center mb-4">Services</h3>
-
-      <p class="mb-10 body-medium text-center mx-auto" style="max-width: 60%">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officia,
-        voluptatem deserunt incidunt dolorum, voluptatibus, quae ut dolorem enim
-        blanditiis
-      </p>
-
+      <h3 class="display--small text-center mb-4">Бидний Үйлчилгээ</h3>
       <v-row>
         <v-col xl="4" lg="4" md="6" sm="12" cols="12">
           <v-card elevation="1">
@@ -318,12 +269,9 @@
             </v-card-title>
             <v-card-subtitle>
               <h4 class="title--medium black--text text-center">
-                Бидний үйлчилгээ1
+                Шинэ Элсэгч
               </h4>
-              <p class="mb-0 body-medium line-clamp-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat repellendus sed maxime voluptate, accusantium
-              </p>
+ 
             </v-card-subtitle>
 
             <v-card-text>
@@ -336,8 +284,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                      Бакалаврын элсэлтийн мэдээлэл
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -349,8 +296,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                      Хөтөлбөр сонголтын мэдээлэл
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -362,8 +308,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                      Тухайн жилийн хөтөлбөрийн багтаамжийн тооцололыг харах 
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -388,12 +333,9 @@
             </v-card-title>
             <v-card-subtitle>
               <h4 class="title--medium black--text text-center">
-                Бидний үйлчилгээ2
+                Оюутан
               </h4>
-              <p class="mb-0 body-medium line-clamp-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat repellendus sed maxime voluptate, accusantium
-              </p>
+ 
             </v-card-subtitle>
 
             <v-card-text>
@@ -406,8 +348,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                      Өөрийн суралцаж буй хөтөлбөрийн мэдээлэл
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -419,8 +360,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                      Сургалтын төлөвлөгөө ба уялдааг харах 
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -432,8 +372,19 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                      Хичээлийн багтаамж, хуваарь, мэдээлэлийг нэг дор харах 
+                    </p>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item class="d-flex align-center">
+                  <v-list-item-icon class="mr-4">
+                    <v-icon color="success">
+                      mdi-checkbox-marked-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <p class="mb-0 body-medium">
+                      Суралцахаар төлөвлөж буй хичээлийн багшийн мэдээлэлийг харах  
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -458,12 +409,9 @@
             </v-card-title>
             <v-card-subtitle>
               <h4 class="title--medium black--text text-center">
-                Бидний үйлчилгээ3
+                Багш
               </h4>
-              <p class="mb-0 body-medium line-clamp-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat repellendus sed maxime voluptate, accusantium
-              </p>
+ 
             </v-card-subtitle>
 
             <v-card-text>
@@ -476,8 +424,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                      Судалгааны ажил,өгүүлэлийн мэдээлэлийг харах
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -536,12 +483,9 @@
             </v-card-title>
             <v-card-subtitle>
               <h4 class="title--medium black--text text-center">
-                Бидний үйлчилгээ4
+                Төгсөгч
               </h4>
-              <p class="mb-0 body-medium line-clamp-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat repellendus sed maxime voluptate, accusantium
-              </p>
+ 
             </v-card-subtitle>
 
             <v-card-text>
@@ -554,8 +498,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                        Эрдэм шинжилгээний хурлын илтгэл өгүүлэлийн мэдээлэлийг харах 
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -567,21 +510,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
-                    </p>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item class="d-flex align-center">
-                  <v-list-item-icon class="mr-4">
-                    <v-icon color="success">
-                      mdi-checkbox-marked-outline
-                    </v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
+                      Судалгааны ажлын сэдэв харах
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -589,76 +518,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
-          <v-card elevation="1">
-            <v-card-title class="justify-center mb-4">
-              <div
-                class="rounded-circle"
-                style="
-                  border: 1px solid var(--background);
-                  background-color: rgb(242, 244, 255);
-                "
-              >
-                <v-avatar height="100%" aspect size="auto">
-                  <RobotSvg />
-                </v-avatar>
-              </div>
-            </v-card-title>
-            <v-card-subtitle>
-              <h4 class="title--medium black--text text-center">
-                Бидний үйлчилгээ5
-              </h4>
-              <p class="mb-0 body-medium line-clamp-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat repellendus sed maxime voluptate, accusantium
-              </p>
-            </v-card-subtitle>
 
-            <v-card-text>
-              <v-list>
-                <v-list-item class="d-flex align-center">
-                  <v-list-item-icon class="mr-4">
-                    <v-icon color="success">
-                      mdi-checkbox-marked-outline
-                    </v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
-                    </p>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item class="d-flex align-center">
-                  <v-list-item-icon class="mr-4">
-                    <v-icon color="success">
-                      mdi-checkbox-marked-outline
-                    </v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
-                    </p>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item class="d-flex align-center">
-                  <v-list-item-icon class="mr-4">
-                    <v-icon color="success">
-                      mdi-checkbox-marked-outline
-                    </v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
-                    </p>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list>
-            </v-card-text>
-          </v-card>
-        </v-col>
         <v-col
           xl="2"
           lg="2"
@@ -674,12 +534,7 @@
 
     <section class="member-container my-12">
       <div class="mx-80 mx-auto">
-        <h3 class="mb-4 display--small text-center">bagiin gishuud</h3>
-        <p class="mb-6 body-medium text-center mx-auto" style="max-width: 60%">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-          officia, voluptatem deserunt incidunt dolorum, voluptatibus, quae ut
-          dolorem enim blanditiis
-        </p>
+        <h3 class="mb-4 display--small text-center">Багийн гишүүд</h3>
         <div class="d-flex flex-wrap" style="justify-content: space-evenly">
           <div
             v-for="(member, index) in members"
@@ -772,15 +627,15 @@ export default {
         },
       ],
       members: [
-        { imageLink: "ireedui", firstName: "firstName", position: "SoftWare" },
-        { imageLink: "amaraa", firstName: "firstName", position: "SoftWare" },
-        { imageLink: "boloroo", firstName: "firstName", position: "SoftWare" },
+        { imageLink: "ireedui", firstName: "Мөнх-Ирээдүй", position: "Хөгжүүлэгч" },
+        { imageLink: "amaraa", firstName: "Амаржаргал", position: "Төслийн шинжээч" },
+        { imageLink: "boloroo", firstName: "Болормаа", position: "Дата аналист" },
         {
           imageLink: "taivanbat",
-          firstName: "firstName",
-          position: "SoftWare",
+          firstName: "Тайванбат",
+          position: "Ахлагч",
         },
-        { imageLink: "anna", firstName: "firstName", position: "SoftWare" },
+        { imageLink: "anna", firstName: "Жавзмаа", position: "Дата аналист" },
       ],
     };
   },
