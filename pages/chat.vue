@@ -149,9 +149,9 @@ export default {
       this.loading = false;
     });
     this.socket.on("error", async (err) => {
-      console.log("error", console.log(err));
+      console.log("error", err);
       this.responses.push({
-        chat_text: `Алдаа гарлаа : ${err.error}`,
+        chat_text: `Алдаа гарлаа : ${err}`,
         chat_type: "bot",
       });
       this.message = "";
