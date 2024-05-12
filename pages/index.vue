@@ -164,8 +164,8 @@
 
     <v-divider />
 
-    <section class="models-container py-12">
-      <div class="mx-80 mx-auto">
+    <section class="models-container py-16" id="used-datas">
+      <div class="mx-80 mx-auto mt-4">
         <h3 class="display--small text-center mb-4">
           МУИС-ийн нээлттэй өгөгдөлийн сангаас бидний сонгож авсан өгөгдөлүүд
         </h3>
@@ -253,7 +253,7 @@
 
     <v-divider />
 
-    <section class="my-16 mx-80 mx-auto">
+    <section class="my-16 mx-80 mx-auto" id="services">
       <h3 class="display--small text-center mb-4">Бидний үйлчилгээ</h3>
       <v-row>
         <v-col xl="3" lg="3" md="6" sm="12" cols="12">
@@ -479,9 +479,9 @@
 
     <v-divider />
 
-    <section class="member-container my-12">
+    <section class="member-container py-14" id="about-us">
       <div class="mx-80 mx-auto">
-        <h3 class="mb-4 display--small text-center">Багийн гишүүд</h3>
+        <h3 class="my-4 display--small text-center">Багийн гишүүд</h3>
         <div class="d-flex flex-wrap" style="justify-content: space-evenly">
           <div
             v-for="(member, index) in members"

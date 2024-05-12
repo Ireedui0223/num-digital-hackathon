@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="d-flex justify-space-between py-6">
+    <header class="d-flex justify-space-between py-4">
       <div>
         <nuxt-link to="/">
           <v-img
@@ -14,17 +14,18 @@
       </div>
       <div>
         <div class="d-flex">
-          <v-btn text plain depressed>Нүүр</v-btn>
-          <v-btn text plain depressed>Бидний тухай</v-btn>
-          <v-btn text plain depressed>Блог</v-btn>
-          <v-btn text plain depressed>Холбоо барих</v-btn>
+          <v-btn text plain depressed to="/">Нүүр</v-btn>
+          <v-btn text plain depressed to="/#about-us">Бидний тухай</v-btn>
+          <v-btn text plain depressed to="/#used-datas">
+            Хэрэглэсэн өгөгдөлүүд
+          </v-btn>
+          <v-btn text plain depressed to="/#contact">Холбоо барих</v-btn>
         </div>
       </div>
       <div>
-        <div class="d-flex">
-          <v-btn text plain depressed>Нэвтрэх</v-btn>
-          <v-btn text plain depressed>Бүртгэх</v-btn>
-        </div>
+        <v-btn depressed color="primary" to="/chat">
+          <p class="body--medium mb-0">Сиси бот</p>
+        </v-btn>
       </div>
     </header>
   </div>

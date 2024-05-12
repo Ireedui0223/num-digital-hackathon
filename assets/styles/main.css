@@ -14,6 +14,7 @@
     --scrollbar-thumb-color: #c1c1c1;
     --dark--scrollbar-thumb-color: rgba(193, 193, 193, 0.5);
     --scrollbar-width: 14px;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -154,9 +155,11 @@ abbr {
 }
 
 .header-container {
-    position: absolute;
+    position: fixed;
+    background-color: white;
     width: 100%;
     z-index: 1;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04) !important;
 }
 
 @media (min-width: 1200px) {

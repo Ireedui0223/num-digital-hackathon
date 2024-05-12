@@ -5,7 +5,7 @@
       <Nuxt />
     </v-main>
     <Snackbar />
-    <Footer class="mt-8" />
+    <Footer class="mt-8" id="contact" />
   </v-app>
 </template>
 
