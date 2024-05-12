@@ -1,8 +1,5 @@
 <template>
-  <v-footer
-    color="background"
-    class="py-8 d-flex flex-column align-end justify-content-end"
-  >
+  <v-footer color="background" class="py-8 d-block px-0">
     <div class="mx-80 mx-auto">
       <div class="d-flex justify-space-between align-center">
         <v-img
@@ -46,7 +43,10 @@
         </div>
       </div>
     </div>
-    <p class="text-right body-medium mb-0">Made with ❤️ by Ireedui and Taivn</p>
+    <v-divider />
+    <p class="text-right body-medium mb-0 mt-2 mx-80 mx-auto">
+      Made with ❤️ by Ireedui and Taivn
+    </p>
   </v-footer>
 </template>
 

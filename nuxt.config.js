@@ -1,10 +1,8 @@
-import colors from "vuetify/es5/util/colors";
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s",
-    title: "novelinvestment.mn",
+    title: "GDSC",
     htmlAttrs: {
       lang: "en",
     },
@@ -44,32 +42,16 @@ export default {
     },
   },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/apollo"],
+  modules: ["nuxt-socket-io"],
 
-  apollo: {
-    tokenName: "token",
-    authenticationType: "",
-    clientConfigs: {
-      default: {
-        // httpEndpoint: "http://localhost:8080",
-        httpEndpoint: "https://graphql.novelinvestment.mn/",
-        tokenName: "token",
-        authenticationType: "",
+  io: {
+    sockets: [
+      {
+        name: "main",
+        url: "http://localhost:4005",
+        default: true,
       },
-    },
-    defaultOptions: {
-      $query: {
-        loadingKey: "loading",
-        fetchPolicy: "network-only",
-      },
-      $mutation: {
-        loadingKey: "loading",
-        fetchPolicy: "network-only",
-      },
-    },
-    cookieAttributes: {
-      domain: "novelinvestment.mn",
-    },
+    ],
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

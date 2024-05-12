@@ -4,6 +4,7 @@
     <v-main app>
       <Nuxt />
     </v-main>
+    <Snackbar />
     <Footer class="mt-8" />
   </v-app>
 </template>
@@ -11,12 +12,12 @@
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-
+import Snackbar from "../components/Snackbar.vue";
 export default {
   data() {
     return {};
   },
-  components: { Header, Footer },
+  components: { Header, Footer, Snackbar },
 };
 </script>
 

@@ -23,7 +23,6 @@ export function metaTag({ title, description, key, image }) {
         property: "og:image",
         content: image || "https://i.ytimg.com/vi/oc_Sy1fq8ZA/hqdefault.jpg",
       },
-      { property: "og:url", content: "https://www.melearn.mn/" },
       {
         name: "twitter:title",
         content: title || "",

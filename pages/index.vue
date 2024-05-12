@@ -24,7 +24,7 @@
               </p>
             </v-card-subtitle>
             <v-card-actions>
-              <v-btn depressed color="primary">
+              <v-btn depressed color="primary" to="/chat">
                 <p class="body--medium mb-0">Сиси бот</p>
                 <v-icon>mdi-chevron-right</v-icon>
               </v-btn>
@@ -166,47 +166,50 @@
 
     <section class="models-container py-12">
       <div class="mx-80 mx-auto">
-        <h3 class="display--small text-center mb-4">МУИС-ийн нээлттэй өгөгдөлийн сангаас бидний сонгож авсан өгөгдөлүүд</h3>
+        <h3 class="display--small text-center mb-4">
+          МУИС-ийн нээлттэй өгөгдөлийн сангаас бидний сонгож авсан өгөгдөлүүд
+        </h3>
         <v-row>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-avatar class="mt-8" height="64" width="64">
-                <v-img
-                  :src="require('@/assets/images/models/book.png')"
-                  :lazy-src="require('@/assets/images/models/book.png')"
-                  alt="book"
-                ></v-img>
-              </v-avatar>
+              <v-img
+                :src="require('@/assets/images/models/book.png')"
+                :lazy-src="require('@/assets/images/models/book.png')"
+                alt="book"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Model name1
               </v-card-title>
-
             </v-card>
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-avatar class="mt-8" height="64" width="64">
-                <v-img
-                  :src="require('@/assets/images/models/book.png')"
-                  :lazy-src="require('@/assets/images/models/book.png')"
-                  alt="book"
-                ></v-img>
-              </v-avatar>
+              <v-img
+                :src="require('@/assets/images/models/graduation.png')"
+                :lazy-src="require('@/assets/images/models/graduation.png')"
+                alt="graduation"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Model name2
               </v-card-title>
-
             </v-card>
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-avatar class="mt-8" height="64" width="64">
-                <v-img
-                  :src="require('@/assets/images/models/book.png')"
-                  :lazy-src="require('@/assets/images/models/book.png')"
-                  alt="book"
-                ></v-img>
-              </v-avatar>
+              <v-img
+                :src="require('@/assets/images/models/learning-path.png')"
+                :lazy-src="require('@/assets/images/models/learning-path.png')"
+                alt="learning-path"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Model name3
               </v-card-title>
@@ -215,13 +218,14 @@
           <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-avatar class="mt-8" height="64" width="64">
-                <v-img
-                  :src="require('@/assets/images/models/book.png')"
-                  :lazy-src="require('@/assets/images/models/book.png')"
-                  alt="book"
-                ></v-img>
-              </v-avatar>
+              <v-img
+                :src="require('@/assets/images/models/lesson.png')"
+                :lazy-src="require('@/assets/images/models/lesson.png')"
+                alt="lesson"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Model name4
               </v-card-title>
@@ -229,17 +233,17 @@
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-avatar class="mt-8" height="64" width="64">
-                <v-img
-                  :src="require('@/assets/images/models/book.png')"
-                  :lazy-src="require('@/assets/images/models/book.png')"
-                  alt="book"
-                ></v-img>
-              </v-avatar>
-              <v-card-title class="title-small text-center"
-                >Model name4
+              <v-img
+                :src="require('@/assets/images/models/struct.png')"
+                :lazy-src="require('@/assets/images/models/struct.png')"
+                alt="struct"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
+              <v-card-title class="title-small text-center">
+                Model name4
               </v-card-title>
-
             </v-card>
           </v-col>
           <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
@@ -252,8 +256,8 @@
     <section class="my-16 mx-80 mx-auto">
       <h3 class="display--small text-center mb-4">Бидний Үйлчилгээ</h3>
       <v-row>
-        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
-          <v-card elevation="1">
+        <v-col xl="3" lg="3" md="6" sm="12" cols="12">
+          <v-card elevation="1" height="100%">
             <v-card-title class="justify-center mb-4">
               <div
                 class="rounded-circle"
@@ -262,16 +266,13 @@
                   background-color: rgb(242, 244, 255);
                 "
               >
-                <v-avatar height="100%" aspect size="auto">
-                  <RobotSvg />
+                <v-avatar aspect size="120">
+                  <BotgoSvg />
                 </v-avatar>
               </div>
             </v-card-title>
             <v-card-subtitle>
-              <h4 class="title--medium black--text text-center">
-                Шинэ Элсэгч
-              </h4>
- 
+              <h4 class="title--medium black--text text-center">Шинэ Элсэгч</h4>
             </v-card-subtitle>
 
             <v-card-text>
@@ -295,9 +296,7 @@
                     </v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
-                    <p class="mb-0 body-medium">
-                      Хөтөлбөр сонголтын мэдээлэл
-                    </p>
+                    <p class="mb-0 body-medium">Хөтөлбөр сонголтын мэдээлэл</p>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item class="d-flex align-center">
@@ -308,7 +307,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Тухайн жилийн хөтөлбөрийн багтаамжийн тооцололыг харах 
+                      Тухайн жилийн хөтөлбөрийн багтаамжийн тооцололыг харах
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -316,8 +315,8 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
-          <v-card elevation="1">
+        <v-col xl="3" lg="3" md="6" sm="12" cols="12">
+          <v-card elevation="1" height="100%">
             <v-card-title class="justify-center mb-4">
               <div
                 class="rounded-circle"
@@ -326,16 +325,13 @@
                   background-color: rgb(242, 244, 255);
                 "
               >
-                <v-avatar height="100%" aspect size="auto">
-                  <RobotSvg />
+                <v-avatar aspect size="120">
+                  <StudentSvg />
                 </v-avatar>
               </div>
             </v-card-title>
             <v-card-subtitle>
-              <h4 class="title--medium black--text text-center">
-                Оюутан
-              </h4>
- 
+              <h4 class="title--medium black--text text-center">Оюутан</h4>
             </v-card-subtitle>
 
             <v-card-text>
@@ -360,7 +356,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Сургалтын төлөвлөгөө ба уялдааг харах 
+                      Сургалтын төлөвлөгөө ба уялдааг харах
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -372,7 +368,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Хичээлийн багтаамж, хуваарь, мэдээлэлийг нэг дор харах 
+                      Хичээлийн багтаамж, хуваарь, мэдээлэлийг нэг дор харах
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -384,7 +380,8 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                      Суралцахаар төлөвлөж буй хичээлийн багшийн мэдээлэлийг харах  
+                      Суралцахаар төлөвлөж буй хичээлийн багшийн мэдээлэлийг
+                      харах
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -392,8 +389,8 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
-          <v-card elevation="1">
+        <v-col xl="3" lg="3" md="6" sm="12" cols="12">
+          <v-card elevation="1" height="100%">
             <v-card-title class="justify-center mb-4">
               <div
                 class="rounded-circle"
@@ -402,16 +399,13 @@
                   background-color: rgb(242, 244, 255);
                 "
               >
-                <v-avatar height="100%" aspect size="auto">
-                  <RobotSvg />
+                <v-avatar aspect size="120">
+                  <TeacherSvg />
                 </v-avatar>
               </div>
             </v-card-title>
             <v-card-subtitle>
-              <h4 class="title--medium black--text text-center">
-                Багш
-              </h4>
- 
+              <h4 class="title--medium black--text text-center">Багш</h4>
             </v-card-subtitle>
 
             <v-card-text>
@@ -428,46 +422,12 @@
                     </p>
                   </v-list-item-content>
                 </v-list-item>
-                <v-list-item class="d-flex align-center">
-                  <v-list-item-icon class="mr-4">
-                    <v-icon color="success">
-                      mdi-checkbox-marked-outline
-                    </v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
-                    </p>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item class="d-flex align-center">
-                  <v-list-item-icon class="mr-4">
-                    <v-icon color="success">
-                      mdi-checkbox-marked-outline
-                    </v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <p class="mb-0 body-medium">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptas eveniet
-                    </p>
-                  </v-list-item-content>
-                </v-list-item>
               </v-list>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col
-          v-if="!$vuetify.breakpoint.mdAndDown"
-          xl="2"
-          lg="2"
-          md="0"
-          sm="0"
-          cols="0"
-        ></v-col>
-        <v-col xl="4" lg="4" md="6" sm="12" cols="12">
-          <v-card elevation="1">
+        <v-col xl="3" lg="3" md="6" sm="12" cols="12">
+          <v-card elevation="1" height="100%">
             <v-card-title class="justify-center mb-4">
               <div
                 class="rounded-circle"
@@ -476,16 +436,13 @@
                   background-color: rgb(242, 244, 255);
                 "
               >
-                <v-avatar height="100%" aspect size="auto">
-                  <RobotSvg />
+                <v-avatar aspect size="120">
+                  <GraduateSvg />
                 </v-avatar>
               </div>
             </v-card-title>
             <v-card-subtitle>
-              <h4 class="title--medium black--text text-center">
-                Төгсөгч
-              </h4>
- 
+              <h4 class="title--medium black--text text-center">Төгсөгч</h4>
             </v-card-subtitle>
 
             <v-card-text>
@@ -498,7 +455,8 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <p class="mb-0 body-medium">
-                        Эрдэм шинжилгээний хурлын илтгэл өгүүлэлийн мэдээлэлийг харах 
+                      Эрдэм шинжилгээний хурлын илтгэл өгүүлэлийн мэдээлэлийг
+                      харах
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -509,24 +467,13 @@
                     </v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
-                    <p class="mb-0 body-medium">
-                      Судалгааны ажлын сэдэв харах
-                    </p>
+                    <p class="mb-0 body-medium">Судалгааны ажлын сэдэв харах</p>
                   </v-list-item-content>
                 </v-list-item>
               </v-list>
             </v-card-text>
           </v-card>
         </v-col>
-
-        <v-col
-          xl="2"
-          lg="2"
-          md="0"
-          sm="0"
-          cols="0"
-          v-if="!$vuetify.breakpoint.mdAndDown"
-        ></v-col>
       </v-row>
     </section>
 
@@ -553,6 +500,10 @@
               height="auto"
               :aspect-ratio="2 / 3"
               class="rounded-lg"
+              style="
+                border: 3px solid rgb(211, 212, 213, 0.3);
+                box-shadow: 0px 25px 25px -25px rgba(0, 0, 0, 0.2);
+              "
             />
             <div
               class="py-6 mt-n10 rounded-lg d-flex flex-column justify-center align-center member-info"
@@ -573,6 +524,11 @@ import InputSvg from "../components/svg/Input.vue";
 import PerceptionSvg from "../components/svg/Perception.vue";
 import ResponseSvg from "../components/svg/Response.vue";
 import RobotSvg from "../components/svg/Robot.vue";
+import TeacherSvg from "../components/svg/Teacher.vue";
+import StudentSvg from "../components/svg/Student.vue";
+import BotgoSvg from "../components/svg/Botgo.vue";
+import GraduateSvg from "../components/svg/Graduate.vue";
+
 export default {
   head() {
     return metaTag({
@@ -584,6 +540,10 @@ export default {
     PerceptionSvg,
     ResponseSvg,
     RobotSvg,
+    TeacherSvg,
+    StudentSvg,
+    BotgoSvg,
+    GraduateSvg,
   },
   data() {
     return {
@@ -627,9 +587,21 @@ export default {
         },
       ],
       members: [
-        { imageLink: "ireedui", firstName: "Мөнх-Ирээдүй", position: "Хөгжүүлэгч" },
-        { imageLink: "amaraa", firstName: "Амаржаргал", position: "Төслийн шинжээч" },
-        { imageLink: "boloroo", firstName: "Болормаа", position: "Дата аналист" },
+        {
+          imageLink: "ireedui",
+          firstName: "Мөнх-Ирээдүй",
+          position: "Хөгжүүлэгч",
+        },
+        {
+          imageLink: "amaraa",
+          firstName: "Амаржаргал",
+          position: "Төслийн шинжээч",
+        },
+        {
+          imageLink: "boloroo",
+          firstName: "Болормаа",
+          position: "Дата аналист",
+        },
         {
           imageLink: "taivanbat",
           firstName: "Тайванбат",
