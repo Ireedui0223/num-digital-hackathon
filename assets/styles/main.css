@@ -16,6 +16,10 @@
     --scrollbar-width: 14px;
 }
 
+* {
+    font-family: 'Comfortaa';
+}
+
 .cursor-pointer {
     cursor: pointer;
 }

@@ -33,7 +33,7 @@ export default {
 
   googleFonts: {
     families: {
-      Roboto: [300, 500, 700],
+      Comfortaa: [300, 500, 700],
     },
   },
   watchers: {

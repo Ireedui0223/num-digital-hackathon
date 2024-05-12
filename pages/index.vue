@@ -1,10 +1,14 @@
 <template>
   <div>
     <section class="mx-80 mx-auto">
-      <v-row no-gutters :style="$vuetify.breakpoint.smAndDown
-          ? ''
-          : 'margin-top: 160px; margin-bottom: 72px'
-        ">
+      <v-row
+        no-gutters
+        :style="
+          $vuetify.breakpoint.smAndDown
+            ? ''
+            : 'margin-top: 160px; margin-bottom: 72px'
+        "
+      >
         <v-col xl="6" lg="6" md="12" sm="12" cols="12">
           <v-card class="pa-4" elevation="0">
             <v-card-title>
@@ -28,7 +32,11 @@
           </v-card>
         </v-col>
         <v-col xl="6" lg="6" md="12" sm="12" cols="12">
-          <v-img :src="require('assets/gif/chat.gif')" :lazy-src="require('assets/gif/chat.gif')" alt="sisi-bot" />
+          <v-img
+            :src="require('assets/gif/chat.gif')"
+            :lazy-src="require('assets/gif/chat.gif')"
+            alt="sisi-bot"
+          />
         </v-col>
       </v-row>
     </section>
@@ -39,9 +47,20 @@
           Бидний ашиглаж буй технологууд
         </h3>
         <div class="carousel-container">
-          <div class="carousel-item pt-4" :style="{ animationDuration: animationDuration + 's' }"
-            v-for="(logo, index) in logos" :key="index">
-            <v-img height="60" width="180" contain :src="logo.src" :lazy-src="logo.src" :alt="logo.alt">
+          <div
+            class="carousel-item pt-4"
+            :style="{ animationDuration: animationDuration + 's' }"
+            v-for="(logo, index) in logos"
+            :key="index"
+          >
+            <v-img
+              height="60"
+              width="180"
+              contain
+              :src="logo.src"
+              :lazy-src="logo.src"
+              :alt="logo.alt"
+            >
             </v-img>
           </div>
         </div>
@@ -59,10 +78,13 @@
         <v-col xl="4" lg="4" md="4" sm="12">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
-              <div class="rounded-circle" style="
+              <div
+                class="rounded-circle"
+                style="
                   border: 1px solid var(--background);
                   background-color: rgb(242, 244, 255);
-                ">
+                "
+              >
                 <v-avatar height="100%" aspect size="auto">
                   <InputSvg />
                 </v-avatar>
@@ -85,10 +107,13 @@
         <v-col xl="4" lg="4" md="4" sm="12">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
-              <div class="rounded-circle" style="
+              <div
+                class="rounded-circle"
+                style="
                   border: 1px solid var(--background);
                   background-color: rgb(242, 244, 255);
-                ">
+                "
+              >
                 <v-avatar height="100%" aspect size="auto">
                   <ResponseSvg />
                 </v-avatar>
@@ -108,10 +133,13 @@
         <v-col xl="4" lg="4" md="4" sm="12">
           <v-card elevation="0">
             <v-card-title class="justify-center mb-4">
-              <div class="rounded-circle" style="
+              <div
+                class="rounded-circle"
+                style="
                   border: 1px solid var(--background);
                   background-color: rgb(242, 244, 255);
-                ">
+                "
+              >
                 <v-avatar height="100%" aspect size="auto">
                   <RobotSvg />
                 </v-avatar>
@@ -144,9 +172,14 @@
         <v-row>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-img :src="require('@/assets/images/models/book.png')"
-                :lazy-src="require('@/assets/images/models/book.png')" alt="book" height="64" width="64"
-                class="mt-8"></v-img>
+              <v-img
+                :src="require('@/assets/images/models/book.png')"
+                :lazy-src="require('@/assets/images/models/book.png')"
+                alt="book"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Элсэлт
               </v-card-title>
@@ -154,9 +187,14 @@
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-img :src="require('@/assets/images/models/graduation.png')"
-                :lazy-src="require('@/assets/images/models/graduation.png')" alt="graduation" height="64" width="64"
-                class="mt-8"></v-img>
+              <v-img
+                :src="require('@/assets/images/models/graduation.png')"
+                :lazy-src="require('@/assets/images/models/graduation.png')"
+                alt="graduation"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Төгсөлт
               </v-card-title>
@@ -164,9 +202,14 @@
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-img :src="require('@/assets/images/models/learning-path.png')"
-                :lazy-src="require('@/assets/images/models/learning-path.png')" alt="learning-path" height="64"
-                width="64" class="mt-8"></v-img>
+              <v-img
+                :src="require('@/assets/images/models/learning-path.png')"
+                :lazy-src="require('@/assets/images/models/learning-path.png')"
+                alt="learning-path"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Хөтөлбөр
               </v-card-title>
@@ -175,9 +218,14 @@
           <v-col xl="2" lg="2" md="0" sm="0" cols="0"></v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-img :src="require('@/assets/images/models/lesson.png')"
-                :lazy-src="require('@/assets/images/models/lesson.png')" alt="lesson" height="64" width="64"
-                class="mt-8"></v-img>
+              <v-img
+                :src="require('@/assets/images/models/lesson.png')"
+                :lazy-src="require('@/assets/images/models/lesson.png')"
+                alt="lesson"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Хичээл
               </v-card-title>
@@ -185,9 +233,14 @@
           </v-col>
           <v-col xl="4" lg="4" md="6" sm="12" cols="12">
             <v-card class="d-flex flex-column justify-center align-center">
-              <v-img :src="require('@/assets/images/models/struct.png')"
-                :lazy-src="require('@/assets/images/models/struct.png')" alt="struct" height="64" width="64"
-                class="mt-8"></v-img>
+              <v-img
+                :src="require('@/assets/images/models/struct.png')"
+                :lazy-src="require('@/assets/images/models/struct.png')"
+                alt="struct"
+                height="64"
+                width="64"
+                class="mt-8"
+              ></v-img>
               <v-card-title class="title-small text-center">
                 Бүтэц
               </v-card-title>
@@ -206,10 +259,13 @@
         <v-col xl="3" lg="3" md="6" sm="12" cols="12">
           <v-card elevation="1" height="100%">
             <v-card-title class="justify-center mb-4">
-              <div class="rounded-circle" style="
+              <div
+                class="rounded-circle"
+                style="
                   border: 1px solid var(--background);
                   background-color: rgb(242, 244, 255);
-                ">
+                "
+              >
                 <v-avatar aspect size="120">
                   <BotgoSvg />
                 </v-avatar>
@@ -262,10 +318,13 @@
         <v-col xl="3" lg="3" md="6" sm="12" cols="12">
           <v-card elevation="1" height="100%">
             <v-card-title class="justify-center mb-4">
-              <div class="rounded-circle" style="
+              <div
+                class="rounded-circle"
+                style="
                   border: 1px solid var(--background);
                   background-color: rgb(242, 244, 255);
-                ">
+                "
+              >
                 <v-avatar aspect size="120">
                   <StudentSvg />
                 </v-avatar>
@@ -333,10 +392,13 @@
         <v-col xl="3" lg="3" md="6" sm="12" cols="12">
           <v-card elevation="1" height="100%">
             <v-card-title class="justify-center mb-4">
-              <div class="rounded-circle" style="
+              <div
+                class="rounded-circle"
+                style="
                   border: 1px solid var(--background);
                   background-color: rgb(242, 244, 255);
-                ">
+                "
+              >
                 <v-avatar aspect size="120">
                   <TeacherSvg />
                 </v-avatar>
@@ -367,10 +429,13 @@
         <v-col xl="3" lg="3" md="6" sm="12" cols="12">
           <v-card elevation="1" height="100%">
             <v-card-title class="justify-center mb-4">
-              <div class="rounded-circle" style="
+              <div
+                class="rounded-circle"
+                style="
                   border: 1px solid var(--background);
                   background-color: rgb(242, 244, 255);
-                ">
+                "
+              >
                 <v-avatar aspect size="120">
                   <GraduateSvg />
                 </v-avatar>
@@ -418,15 +483,31 @@
       <div class="mx-80 mx-auto">
         <h3 class="mb-4 display--small text-center">Багийн гишүүд</h3>
         <div class="d-flex flex-wrap" style="justify-content: space-evenly">
-          <div v-for="(member, index) in members" :key="index"
-            class="mx-6 my-4 d-flex justify-center align-center flex-column cursor-pointer member-image">
-            <v-img :src="require(`@/assets/images/team-members/${member.imageLink}.jpg`)
-        " :lazy-src="require(`@/assets/images/team-members/${member.imageLink}.jpg`)
-        " :alt="member.imageLink" width="240" height="auto" :aspect-ratio="2 / 3" class="rounded-lg" style="
+          <div
+            v-for="(member, index) in members"
+            :key="index"
+            class="mx-6 my-4 d-flex justify-center align-center flex-column cursor-pointer member-image"
+          >
+            <v-img
+              :src="
+                require(`@/assets/images/team-members/${member.imageLink}.jpg`)
+              "
+              :lazy-src="
+                require(`@/assets/images/team-members/${member.imageLink}.jpg`)
+              "
+              :alt="member.imageLink"
+              width="240"
+              height="auto"
+              :aspect-ratio="2 / 3"
+              class="rounded-lg"
+              style="
                 border: 3px solid rgb(211, 212, 213, 0.3);
                 box-shadow: 0px 25px 25px -25px rgba(0, 0, 0, 0.2);
-              " />
-            <div class="py-6 mt-n10 rounded-lg d-flex flex-column justify-center align-center member-info">
+              "
+            />
+            <div
+              class="py-6 mt-n10 rounded-lg d-flex flex-column justify-center align-center member-info"
+            >
               <h4 class="title--medium text-center">{{ member.firstName }}</h4>
               <p class="body--medium text-center mb-0">{{ member.position }}</p>
             </div>

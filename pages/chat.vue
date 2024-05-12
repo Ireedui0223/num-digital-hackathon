@@ -20,7 +20,7 @@
           </v-list-item>
 
           <v-divider />
-          <v-list-item>
+          <v-list-item class="py-2">
             <v-list-item-content>
               <v-list-item-title class="title-large">
                 Түгээмэл асуултууд
@@ -47,27 +47,58 @@
         sm="12"
         cols="12"
         class="chat-container"
-        style="background-color: transparent"
+        style="background-color: white"
       >
         <div style="padding: 40px 40px 80px 40px">
           <div
             v-for="(response, index) in responses"
             :key="index"
-            class="pa-2 px-4 d-flex"
+            class="pa-2 px-4 d-flex question-card"
             :class="
               response.chat_type == 'user' ? 'justify-end' : 'justify-start'
             "
           >
-            <v-card
-              :color="response.chat_type == 'user' ? 'info' : 'secondary'"
-              class="white--text"
-              max-width="70%"
-              rounded
-            >
-              <v-card-text class="pa-2 white--text body-medium">
-                {{ response.chat_text }}
-              </v-card-text>
-            </v-card>
+            <v-expand-transition>
+              <!-- :color="response.chat_type == 'user' ? 'info' : 'secondary'" -->
+              <v-card
+                color="transparent"
+                class="primary--text rounded-xl"
+                max-width="70%"
+                elevation="0"
+              >
+                <v-card-text
+                  class="py-2 d-flex primary--text body-medium px-4 align-center"
+                  :style="
+                    response.chat_type == 'bot'
+                      ? 'background-color: rgb(77 205 241 / 14%)'
+                      : ''
+                  "
+                >
+                  <v-icon
+                    v-if="response.chat_type == 'bot'"
+                    color="primary"
+                    class="mr-2"
+                    >mdi-robot-happy
+                  </v-icon>
+                  <p
+                    class="mb-0"
+                    :class="
+                      response.chat_type == 'bot'
+                        ? 'primary--text'
+                        : 'black--text'
+                    "
+                  >
+                    {{ response.chat_text }}
+                  </p>
+                  <v-icon
+                    v-if="response.chat_type !== 'bot'"
+                    color="black"
+                    class="ml-2"
+                    >mdi-account-circle
+                  </v-icon>
+                </v-card-text>
+              </v-card>
+            </v-expand-transition>
           </div>
         </div>
         <div class="text-field-container">
@@ -180,7 +211,7 @@ export default {
 .chat-layout {
   width: 100vw;
   height: 100vh;
-  background-color: var(--primary);
+  background-color: #11408d;
 }
 .chat-container {
   position: relative;
@@ -199,6 +230,20 @@ export default {
       background-color: white;
       border-radius: 10px;
     }
+  }
+}
+
+.question-card {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+  width: auto;
+}
+
+@starting-style {
+  .question-card {
+    display: none;
+    width: 0;
+    opacity: 0;
   }
 }
 </style>
