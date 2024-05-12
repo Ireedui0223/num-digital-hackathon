@@ -49,7 +49,10 @@
         class="chat-container"
         style="background-color: white"
       >
-        <div style="padding: 40px 40px 80px 40px">
+        <div
+          style="padding: 40px 40px 200px 40px"
+          id="chat"
+        >
           <div
             v-for="(response, index) in responses"
             :key="index"
@@ -177,6 +180,10 @@ export default {
       console.log("success", msg);
       this.responses.push({ chat_text: msg, chat_type: "bot" });
       this.message = "";
+      var container = this.$el.querySelector("#chat");
+      let element = document.getElementById("chat");
+      element.scrollIntoView({ behavior: "smooth", block: "end" });
+
       this.loading = false;
     });
     this.socket.on("error", async (err) => {
@@ -201,6 +208,9 @@ export default {
       }
       this.loading = true;
       this.responses.push({ chat_text: v, chat_type: "user" });
+      let element = document.getElementById("chat");
+      element.scrollIntoView({ behavior: "smooth", block: "end" });
+
       this.socket.emit("send_chat", { chat_text: v });
     },
   },
